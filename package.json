@@ -1,0 +1,32 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "Cypress Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "author": "Automation Engineer",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^6.0.7",
+    "cypress": "^13.15.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mailslurp": "^1.10.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-test-email": "^1.5.2",
+    "gmail-tester": "^1.3.8",
+    "mailosaur": "^8.7.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mailosaur": "^2.16.0",
+    "googleapis": "^142.0.0",
+    "mailslurp-client": "^15.20.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/step_definitions"
+  }
+}
