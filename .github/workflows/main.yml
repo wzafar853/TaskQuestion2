@@ -29,5 +29,11 @@ jobs:
 
       - name: Run Cypress tests
         run: npm run test --browser ${{ matrix.browser }}
-
+        
+      - name: Upload Cypress screenshots on failure
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
    
