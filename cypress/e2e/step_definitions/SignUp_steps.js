@@ -1,4 +1,4 @@
-import { Given, When, Then } from '/Users/mac/Documents/TaskQuestion2/node_modules/cypress-cucumber-preprocessor/steps';
+import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import SignupPage from '../../support/pages/SignupPage';
 import DashboardPage from '../../support/pages/DashboardPage';
 
