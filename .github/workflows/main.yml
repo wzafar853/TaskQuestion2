@@ -30,11 +30,4 @@ jobs:
       - name: Run Cypress tests
         run: npx cypress run --browser ${{ matrix.browser }} --parallel --record --key <your-cypress-dashboard-key>
 
-      - name: Upload Cypress reports
-        if: always()
-        run: |
-          mkdir -p reports
-          mv cypress/videos reports/
-          mv cypress/screenshots reports/
-          tar -czf reports.tar.gz reports/
-          upload-artifact --name cypress-reports --path reports.tar.gz
+   
