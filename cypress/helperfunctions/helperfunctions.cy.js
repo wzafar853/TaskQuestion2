@@ -16,7 +16,6 @@ let newEmail = ''
   }
   
   /**
-   * Generates a random unique email address in the format ejaz+e2e{uniqueID}@multion.ai.
    *
    * @param {number} idLength - The length of the unique ID part of the email address.
    * @returns {string} - The generated unique email address.
